@@ -22,6 +22,20 @@ struct ContentView: View {
                 ForEach(items) { item in
                     NavigationLink {
                         Text("Item at123 \(item.timestamp!, formatter: itemFormatter)")
+                        Text("ff")
+//                        Button {
+//
+//                        } label: {
+//                            Text("ff")
+//                        }
+                        Button(action: {  }, label: { Text("aa") }
+                        )
+                        List{
+                            ForEach([1,2,3],id:\.self){ item in
+                                Text("\(item))")
+                            }
+                        }
+
                     } label: {
                         Text(item.timestamp!, formatter: itemFormatter)
                     }
